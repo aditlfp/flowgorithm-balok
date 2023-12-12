@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Administrator"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-12 08:30:51 PM"/>
+        <attribute name="created" value="QWRtaW5pc3RyYXRvcjtXSU4tMU8xTDdBMjNFT1Y7MjAyMy0xMi0xMjswODoxMjozMiBQTTszNjQx"/>
+        <attribute name="edited" value="QWRtaW5pc3RyYXRvcjtXSU4tMU8xTDdBMjNFT1Y7MjAyMy0xMi0xMjswODoyNzoxNyBQTTsxO0FkbWluaXN0cmF0b3I7V0lOLTFPMUw3QTIzRU9WOzIwMjMtMTItMTI7MDc6NTI6NDUgUE07bWVuY2FyaS1rZWxpbGluZy1iYWxvay5mcHJnOzEwMTk0"/>
+        <attribute name="edited" value="QWRtaW5pc3RyYXRvcjtXSU4tMU8xTDdBMjNFT1Y7MjAyMy0xMi0xMjswODoyODoyMiBQTTsxO0FkbWluaXN0cmF0b3I7V0lOLTFPMUw3QTIzRU9WOzIwMjMtMTItMTI7MDg6MDE6NTAgUE07bWVuY2FyaS1sdWFzLWJhbG9rLmZwcmc7OTc3Mg=="/>
+        <attribute name="edited" value="QWRtaW5pc3RyYXRvcjtXSU4tMU8xTDdBMjNFT1Y7MjAyMy0xMi0xMjswODoyOTowMCBQTTsxO0FkbWluaXN0cmF0b3I7V0lOLTFPMUw3QTIzRU9WOzIwMjMtMTItMTI7MDg6MTA6MTggUE07bWVuY2FyaS12YWxvbWUtYmFsb2suZnByZzs5OTgw"/>
+        <attribute name="edited" value="QWRtaW5pc3RyYXRvcjtXSU4tMU8xTDdBMjNFT1Y7MjAyMy0xMi0xMjswODozMDo1MSBQTTsxOzM3NTA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="hasil, panjang, lebar, tinggi, menu" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukkan Panjang Balok : &quot;" newline="True"/>
+            <input variable="panjang"/>
+            <output expression="&quot;Masukkan Lebar Balok : &quot;" newline="True"/>
+            <input variable="lebar"/>
+            <output expression="&quot;Masukkan Tinggi Balok&quot;" newline="True"/>
+            <input variable="tinggi"/>
+            <output expression="&quot;PILIH MENU&quot;" newline="True"/>
+            <output expression="&quot;1. Hitung Keliling&quot;" newline="True"/>
+            <output expression="&quot;2. Hitung Luas Permukaan Balok&quot;" newline="True"/>
+            <output expression="&quot;3. Hitung Volume Balok&quot;" newline="True"/>
+            <input variable="menu"/>
+            <if expression="menu == 1">
+                <then>
+                    <assign variable="hasil" expression="4 * (panjang + lebar + tinggi)"/>
+                    <output expression="&quot;Keliling Balok Adalah : &quot; &amp;hasil" newline="True"/>
+                </then>
+                <else>
+                    <if expression="menu == 2">
+                        <then>
+                            <assign variable="hasil" expression="2*(panjang * lebar + panjang * tinggi +lebar * tinggi)"/>
+                            <output expression="&quot;Luas Permukaan Balok Adalah : &quot; &amp;hasil" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="menu == 3">
+                                <then>
+                                    <assign variable="hasil" expression="panjang * lebar * tinggi"/>
+                                    <output expression="&quot;Volume Balok Adalah : &quot; &amp;hasil" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Menu Tidak Tersedia&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

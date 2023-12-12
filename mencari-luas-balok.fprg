@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Administrator"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-12 08:10:15 PM"/>
+        <attribute name="created" value="QWRtaW5pc3RyYXRvcjtXSU4tMU8xTDdBMjNFT1Y7MjAyMy0xMi0xMjswODowMTo1MCBQTTszNjM5"/>
+        <attribute name="edited" value="QWRtaW5pc3RyYXRvcjtXSU4tMU8xTDdBMjNFT1Y7MjAyMy0xMi0xMjswODoxMDoxNSBQTTsxOzM3NDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="hasil, p, l, t" type="Integer" array="False" size=""/>
+            <input variable="p"/>
+            <input variable="l"/>
+            <input variable="t"/>
+            <assign variable="hasil" expression="2*(p*l + p*t +l*t)"/>
+            <output expression="hasil" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
