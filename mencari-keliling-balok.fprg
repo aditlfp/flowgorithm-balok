@@ -4,16 +4,19 @@
         <attribute name="name" value="Mencari Keliling"/>
         <attribute name="authors" value="Administrator"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2023-12-12 08:01:40 PM"/>
+        <attribute name="saved" value="2024-01-09 06:44:25 PM"/>
         <attribute name="created" value="QWRtaW5pc3RyYXRvcjtXSU4tMU8xTDdBMjNFT1Y7MjAyMy0xMi0xMjswNzo1Mjo0NSBQTTszNjQ4"/>
-        <attribute name="edited" value="QWRtaW5pc3RyYXRvcjtXSU4tMU8xTDdBMjNFT1Y7MjAyMy0xMi0xMjswODowMTo0MCBQTTsyOzM3NDc="/>
+        <attribute name="edited" value="QWRtaW5pc3RyYXRvcjtXSU4tMU8xTDdBMjNFT1Y7MjAyNC0wMS0wOTswNjo0NDoyNSBQTTszOzM3NjE="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
             <declare name="p, l, t, hasil" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukkan Panjang : &quot;" newline="True"/>
             <input variable="p"/>
+            <output expression="&quot;Masukkan Lebar : &quot;" newline="True"/>
             <input variable="l"/>
+            <output expression="&quot;Masukkan Tinggi : &quot;" newline="True"/>
             <input variable="t"/>
             <assign variable="hasil" expression="4 * (p+l+t)"/>
             <output expression="hasil" newline="True"/>

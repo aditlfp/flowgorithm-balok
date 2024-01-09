@@ -4,16 +4,20 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="Administrator"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2023-12-12 08:10:15 PM"/>
+        <attribute name="saved" value="2024-01-09 06:45:00 PM"/>
         <attribute name="created" value="QWRtaW5pc3RyYXRvcjtXSU4tMU8xTDdBMjNFT1Y7MjAyMy0xMi0xMjswODowMTo1MCBQTTszNjM5"/>
-        <attribute name="edited" value="QWRtaW5pc3RyYXRvcjtXSU4tMU8xTDdBMjNFT1Y7MjAyMy0xMi0xMjswODoxMDoxNSBQTTsxOzM3NDg="/>
+        <attribute name="edited" value="QWRtaW5pc3RyYXRvcjtXSU4tMU8xTDdBMjNFT1Y7MjAyNC0wMS0wOTswNjo0NDozNyBQTTszO0FkbWluaXN0cmF0b3I7V0lOLTFPMUw3QTIzRU9WOzIwMjMtMTItMTI7MDc6NTI6NDUgUE07bWVuY2FyaS1rZWxpbGluZy1iYWxvay5mcHJnOzEwMjAw"/>
+        <attribute name="edited" value="QWRtaW5pc3RyYXRvcjtXSU4tMU8xTDdBMjNFT1Y7MjAyNC0wMS0wOTswNjo0NTowMCBQTTsyOzM3NTQ="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
             <declare name="hasil, p, l, t" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukkan Panjang : &quot;" newline="True"/>
             <input variable="p"/>
+            <output expression="&quot;Masukkan Lebar : &quot;" newline="True"/>
             <input variable="l"/>
+            <output expression="&quot;Masukkan Tinggi : &quot;" newline="True"/>
             <input variable="t"/>
             <assign variable="hasil" expression="2*(p*l + p*t +l*t)"/>
             <output expression="hasil" newline="True"/>
