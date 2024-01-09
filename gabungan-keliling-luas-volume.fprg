@@ -4,13 +4,13 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="Administrator"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2024-01-09 09:12:44 PM"/>
+        <attribute name="saved" value="2024-01-09 09:22:32 PM"/>
         <attribute name="created" value="QWRtaW5pc3RyYXRvcjtXSU4tMU8xTDdBMjNFT1Y7MjAyMy0xMi0xMjswODoxMjozMiBQTTszNjQx"/>
         <attribute name="edited" value="QWRtaW5pc3RyYXRvcjtXSU4tMU8xTDdBMjNFT1Y7MjAyMy0xMi0xMjswODoyODoyMiBQTTsxO0FkbWluaXN0cmF0b3I7V0lOLTFPMUw3QTIzRU9WOzIwMjMtMTItMTI7MDg6MDE6NTAgUE07bWVuY2FyaS1sdWFzLWJhbG9rLmZwcmc7OTc3Mg=="/>
         <attribute name="edited" value="QWRtaW5pc3RyYXRvcjtXSU4tMU8xTDdBMjNFT1Y7MjAyMy0xMi0xMjswODoyOTowMCBQTTsxO0FkbWluaXN0cmF0b3I7V0lOLTFPMUw3QTIzRU9WOzIwMjMtMTItMTI7MDg6MTA6MTggUE07bWVuY2FyaS12YWxvbWUtYmFsb2suZnByZzs5OTgw"/>
         <attribute name="edited" value="UmVuZGk7UE9MQVJJUzsyMDIzLTEyLTEzOzEyOjEwOjM2IEFNOzE7MjQwMA=="/>
         <attribute name="edited" value="QWRtaW5pc3RyYXRvcjtXSU4tMU8xTDdBMjNFT1Y7MjAyNC0wMS0wOTswOTowNDo1NSBQTTsyO0FkbWluaXN0cmF0b3I7V0lOLTFPMUw3QTIzRU9WOzIwMjMtMTItMTI7MDc6NTI6NDUgUE07bWVuY2FyaS1rZWxpbGluZy1iYWxvay5mcHJnOzEwMTk4"/>
-        <attribute name="edited" value="QWRtaW5pc3RyYXRvcjtXSU4tMU8xTDdBMjNFT1Y7MjAyNC0wMS0wOTswOToxMjo0NCBQTTs0OzM3NjE="/>
+        <attribute name="edited" value="QWRtaW5pc3RyYXRvcjtXSU4tMU8xTDdBMjNFT1Y7MjAyNC0wMS0wOTswOToyMjozMiBQTTs1OzM3NjA="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -21,74 +21,66 @@
             <output expression="&quot;1. Hitung Keliling Permukaan Balok&quot;" newline="True"/>
             <output expression="&quot;2. Hitung Luas Permukaan Balok&quot;" newline="True"/>
             <output expression="&quot;3. Hitung Volume Balok&quot;" newline="True"/>
-            <output expression="&quot;4. Keluar&quot;" newline="True"/>
             <input variable="menu"/>
             <assign variable="hasil" expression="0"/>
-            <while expression="menu &gt;= 5">
+            <while expression="menu &gt;= 4">
                 <output expression="&quot;Menu Yang Anda Masukkan Salah !&quot;" newline="True"/>
                 <call expression="main"/>
                 <breakpoint expression="" always="True"/>
             </while>
-            <if expression="menu == 4">
+            <output expression="&quot;Masukkan Panjang Balok : &quot;" newline="True"/>
+            <input variable="panjang"/>
+            <output expression="&quot;Masukkan Lebar Balok : &quot;" newline="True"/>
+            <input variable="lebar"/>
+            <output expression="&quot;Masukkan Tinggi Balok&quot;" newline="True"/>
+            <input variable="tinggi"/>
+            <if expression="menu == 1">
                 <then>
-                    <output expression="&quot;Masukkan Panjang : &quot;" newline="True"/>
+                    <assign variable="hasil" expression="4 * (panjang + lebar + tinggi)"/>
+                    <output expression="&quot;Keliling Balok Adalah : &quot; &amp;hasil" newline="True"/>
                 </then>
                 <else>
-                    <output expression="&quot;Masukkan Panjang Balok : &quot;" newline="True"/>
-                    <input variable="panjang"/>
-                    <output expression="&quot;Masukkan Lebar Balok : &quot;" newline="True"/>
-                    <input variable="lebar"/>
-                    <output expression="&quot;Masukkan Tinggi Balok&quot;" newline="True"/>
-                    <input variable="tinggi"/>
-                    <if expression="menu == 1">
+                    <if expression="menu == 2">
                         <then>
-                            <assign variable="hasil" expression="4 * (panjang + lebar + tinggi)"/>
-                            <output expression="&quot;Keliling Balok Adalah : &quot; &amp;hasil" newline="True"/>
+                            <assign variable="hasil" expression="2*(panjang * lebar + panjang * tinggi +lebar * tinggi)"/>
+                            <output expression="&quot;Luas Permukaan Balok Adalah : &quot; &amp;hasil" newline="True"/>
                         </then>
                         <else>
-                            <if expression="menu == 2">
+                            <if expression="menu == 3">
                                 <then>
-                                    <assign variable="hasil" expression="2*(panjang * lebar + panjang * tinggi +lebar * tinggi)"/>
-                                    <output expression="&quot;Luas Permukaan Balok Adalah : &quot; &amp;hasil" newline="True"/>
+                                    <assign variable="hasil" expression="panjang * lebar * tinggi"/>
+                                    <output expression="&quot;Volume Balok Adalah : &quot; &amp;hasil" newline="True"/>
                                 </then>
                                 <else>
-                                    <if expression="menu == 3">
-                                        <then>
-                                            <assign variable="hasil" expression="panjang * lebar * tinggi"/>
-                                            <output expression="&quot;Volume Balok Adalah : &quot; &amp;hasil" newline="True"/>
-                                        </then>
-                                        <else>
-                                            <output expression="&quot;Menu Tidak Valid !&quot;" newline="True"/>
-                                        </else>
-                                    </if>
+                                    <output expression="&quot;Menu Tidak Valid !&quot;" newline="True"/>
                                 </else>
                             </if>
                         </else>
                     </if>
-                    <while expression="hasil != 0">
-                        <output expression="&quot;Lanjut Atau Selesai ( Y / N )&quot;" newline="True"/>
-                        <input variable="lanjut"/>
-                        <if expression="lanjut == &quot;Y&quot; || lanjut == &quot;y&quot;">
-                            <then>
-                                <call expression="main"/>
-                                <breakpoint expression="" always="True"/>
-                            </then>
-                            <else>
-                                <if expression="lanjut == &quot;N&quot; || lanjut == &quot;n&quot;">
-                                    <then>
-                                        <assign variable="hasil" expression="0"/>
-                                    </then>
-                                    <else>
-                                        <output expression="&quot;Menu Yang Anda Masukkan Tidak Valid !&quot;" newline="True"/>
-                                        <assign variable="hasil" expression="1"/>
-                                    </else>
-                                </if>
-                            </else>
-                        </if>
-                    </while>
-                    <output expression="&quot;Terimakasih Telah Menggunakan Program Kami !&quot;" newline="True"/>
                 </else>
             </if>
+            <while expression="hasil != 0">
+                <output expression="&quot;Lanjut Atau Selesai ( Y / N )&quot;" newline="True"/>
+                <input variable="lanjut"/>
+                <if expression="lanjut == &quot;Y&quot; || lanjut == &quot;y&quot;">
+                    <then>
+                        <call expression="main"/>
+                        <breakpoint expression="" always="True"/>
+                    </then>
+                    <else>
+                        <if expression="lanjut == &quot;N&quot; || lanjut == &quot;n&quot;">
+                            <then>
+                                <assign variable="hasil" expression="0"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;Menu Yang Anda Masukkan Tidak Valid !&quot;" newline="True"/>
+                                <assign variable="hasil" expression="1"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+            <output expression="&quot;Terimakasih Telah Menggunakan Program Kami !&quot;" newline="True"/>
         </body>
     </function>
     <function name="end" type="None" variable="">
